@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Full width of ChatGPT for Google",
-  "description": "右侧宽度加到700px, 岂不美哉~",
+  "description": "鍙充晶瀹藉害鍔犲埌700px, 宀備笉缇庡搲~",
   "version": "1.0",
   "permissions": ["activeTab"],
   "content_scripts": [
