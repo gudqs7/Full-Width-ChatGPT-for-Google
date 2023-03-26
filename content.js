@@ -1,3 +1,4 @@
+var afterWidth = 700
 
 var timer = setInterval(() => {
   fireContentLoadedEvent()
@@ -11,12 +12,12 @@ function fireContentLoadedEvent() {
     if (c4gSearch) {
       var searchShadowRoot = c4gSearch.shadowRoot
       if (searchShadowRoot && searchShadowRoot.querySelector('div > div')) {
-        searchShadowRoot.querySelector('div > div').style = "width: 701px;"
+        searchShadowRoot.querySelector('div > div').style = "width: "+ afterWidth +"px;"
         clearInterval(timer)
 
         var root = document.querySelector('.srp')
         if (root) {
-          root.style.setProperty('--rhs-width', '772px');
+          root.style.setProperty('--rhs-width', (afterWidth + 20) + 'px');
         }
       }
     }
